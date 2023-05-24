@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Dima Rayi](https://up.htmlacademy.ru/htmlcss/37/user/2213125).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://up.htmlacademy.ru/htmlcss/37/user/29644).
 
 ---
 
