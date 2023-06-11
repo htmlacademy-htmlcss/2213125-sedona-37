@@ -44,11 +44,9 @@
               </ul>
             </div>
           </header>
-
           <main class="main-inner">
             <header class="inner-header">
                 <h1 class="inner-header-title">Гостиницы Седоны</h1>
-
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -58,10 +56,8 @@
                 </li>
               </ul>
             </header>
-
             <section class="catalog-hotels">
               <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -86,9 +82,6 @@
                     </li>
                   </ul>
                 </fieldset>
-
-
-
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Тип Жилья:</legend>
                   <ul class="catalog-filter-list">
@@ -111,18 +104,111 @@
                       </label>
                     </li>
                   </ul>
-
-
-
-
-
-
-
                 </fieldset>
                 <button class="button" type="submit">Применить</button>
+                <button class="button" type="button">Сбросить</button>
               </form>
+              <!-- тут стоит разделить секции -->
+              <p>Найдено гостиниц: 38</p>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">Сначала популярное</option>
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
 
+              <a class="button" href="#" >
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+              <a class="button" href="#" >
+                <span class="visually-hidden">Показать что-то</span>  <!-- Значек не опознан -->
+              </a>
+              <a class="button" href="#" >
+                <span class="visually-hidden">Показать список</span>
+              </a>
+              <ul class="housing-list">
+              <li class="housing-card">
+                <a class="housing-card-link" href="#">
+                  <img class="housing-card-image" src="" alt="">
+                  <h3 class="housing-card-title">Amara Resort & Spa</h3>
+                </a>
+                <p class="housing-card-type">Гостиница</p>
+                <p class="housing-card-price">От 4000 ₽</p>
+                <a class="housing-card-detailed" href="#">Подробнее</a>
+                <a class="housing-card-favorites" href="#">В избранное</a>
+                <!-- Место для звездочек -->
+                <p class="housing-card-rating">Рейтинг: 8,5</p>
+              </li>
+
+              <li class="housing-card">
+                <a class="housing-card-link" href="#">
+                  <img class="housing-card-image" src="" alt="">
+                  <h3 class="housing-card-title">Villas at Poco Diablo</h3>
+                </a>
+                <p class="housing-card-type">Гостиница</p>
+                <p class="housing-card-price">От 5000 ₽</p>
+                <a class="housing-card-detailed" href="#">Подробнее</a>
+                <a class="housing-card-favorites infavor" href="#">В избранном</a>
+                <!-- Место для звездочек -->
+                <p class="housing-card-rating">Рейтинг: 9,2</p>
+              </li>
+              <li class="housing-card">
+                <a class="housing-card-link" href="#">
+                  <img class="housing-card-image" src="" alt="">
+                  <h3 class="housing-card-title">Desert Quail Inn</h3>
+                </a>
+                <p class="housing-card-type">Гостиница</p>
+                <p class="housing-card-price">От 2500 ₽</p>
+                <a class="housing-card-detailed" href="#">Подробнее</a>
+                <a class="housing-card-favorites" href="#">В избранное</a>
+                <!-- Место для звездочек -->
+                <p class="housing-card-rating">Рейтинг: 6,9</p>
+              </li>
+              <li class="housing-card">
+                <a class="housing-card-link" href="#">
+                  <img class="housing-card-image" src="" alt="">
+                  <h3 class="housing-card-title">GreenTree Inn</h3>
+                </a>
+                <p class="housing-card-type">Гостиница</p>
+                <p class="housing-card-price">От 1500 ₽</p>
+                <a class="housing-card-detailed" href="#">Подробнее</a>
+                <a class="housing-card-favorites" href="#">В избранное</a>
+                <!-- Место для звездочек -->
+                <p class="housing-card-rating">Рейтинг: 5,0</p>
+              </li>
+              </ul>
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">4</a>
+                </li>
+                <!-- Точки в пагинации -->
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">10</a>
+                </li>
+              </ul>
             </section>
+            <section class="subscription">
+              <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+              <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+              <form class="subscription-form" action="http://echo.htmlacademy.ru/" method="post">
+                <p class="subscription-form-email">
+                  <input type="text" name="subscription-email" placeholder="Ваш e-mail">
+                  <button class="button" type="submit">Подписаться</button>
+                </p>
+              </form>
+            </section>
+
 
           </main>
 
