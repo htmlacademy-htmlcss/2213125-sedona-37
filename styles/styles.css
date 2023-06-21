@@ -16,4 +16,160 @@
 
 body{
     font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #F2F2F2;
 }
+
+.page-header{
+
+}
+
+.navigation-link{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+/* Нужно добавить цвет текста и фона */
+.hero{
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    background-image: url(../img/hero.jpg);
+    background-size: 1200px 520px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+/* Непонятное */
+.advantages{
+    text-align: center;
+}
+
+.recommendations{
+    text-align: center;
+}
+
+.search{
+    text-align: center;
+}
+
+.subscription-main{
+    text-align: center;
+    background-color: #82B3D3;
+}
+
+.content{
+    width: 1200px;
+    margin:auto;
+    background-color: #FFFFFF;;
+}
+
+
+/* Заголовки и тексты*/
+.title-60{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color:#000000;
+    text-transform: uppercase;
+}
+
+.title-30{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color:#000000;
+    text-transform: uppercase;
+}
+
+.title-24{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color:#000000;
+    text-transform: uppercase;
+}
+
+.text-22{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.text-phone {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.button-big{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #756157;
+    text-decoration: none;
+
+}
+
+.button-second {
+    background-color: #82B3D3;
+}
+
+/* Специальные классы */
+.background-basic{
+    background-color: #82B3D3;
+}
+
+.background-second-1{
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.background-second-2{
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title-light {
+    color: #FFFFFF;
+}
+
+.advantages-text-light{
+    color: #FFFFFF;
+}
+
+.text-light{
+    color: #FFFFFF;
+}
+
+/* Проверить, добавил не глядя */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
