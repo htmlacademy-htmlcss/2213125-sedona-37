@@ -15,17 +15,23 @@
 }
 
 body{
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
     background-color: #F2F2F2;
-}
-
-.page-header{
 
 }
+
+.page-container{
+    width: 1200px;
+    margin:auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+}
+
 
 .navigation-link{
     font-family: "PT Sans", sans-serif;
@@ -41,9 +47,7 @@ body{
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url(../img/hero.jpg);
-    background-size: 1200px 520px;
     background-repeat: no-repeat;
-    display: block;
 }
 
 
@@ -61,15 +65,14 @@ body{
 }
 
 .subscription-main{
-    text-align: center;
+    color: #FFFFFF;
     background-color: #82B3D3;
+    background-image: url(../img/subscribe.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
 }
 
-.content{
-    width: 1200px;
-    margin:auto;
-    background-color: #FFFFFF;;
-}
+
 
 
 /* Заголовки и тексты*/
@@ -128,7 +131,17 @@ body{
     color: #FFFFFF;
     background-color: #756157;
     text-decoration: none;
+}
 
+.button-small{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #756157;
+    text-decoration: none;
 }
 
 .button-second {
