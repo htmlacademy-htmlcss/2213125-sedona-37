@@ -22,19 +22,16 @@ body{
     line-height: 21px;
     color: #333333;
     background-color: #F2F2F2;
-
 }
 
 .page-container{
     width: 1200px;
-    margin:auto;
+    margin: auto;
     background-color: #FFFFFF;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
 }
 
-
 .navigation-link{
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -50,6 +47,12 @@ body{
     background-repeat: no-repeat;
 }
 
+.header-filter {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    background-image: url(../img/filter.jpg);
+    background-repeat: no-repeat;
+}
 
 /* Непонятное */
 .advantages{
@@ -64,43 +67,42 @@ body{
     text-align: center;
 }
 
+.subscription{
+    text-align: center;
+}
+
 .subscription-main{
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url(../img/subscribe.jpg);
     background-repeat: no-repeat;
-    text-align: center;
 }
-
-
-
-
 /* Заголовки и тексты*/
-.title-60{
-    font-family: "PT Sans", sans-serif;
+.title {
     font-weight: 700;
-    font-size: 60px;
-    line-height: 78px;
     color:#000000;
     text-transform: uppercase;
+}
+
+.title-60{
+    font-size: 60px;
+    line-height: 78px;
 }
 
 .title-30{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    color:#000000;
-    text-transform: uppercase;
 }
 
 .title-24{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color:#000000;
-    text-transform: uppercase;
+}
+
+.title-24-None-Case {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: none;
 }
 
 .text-22{
@@ -119,7 +121,6 @@ body{
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
-
 }
 
 .button-big{
@@ -131,9 +132,13 @@ body{
     color: #FFFFFF;
     background-color: #756157;
     text-decoration: none;
+    border-radius: 4px;
+    padding: 8px 50px;
+
+
 }
 
-.button-small{
+.button{
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -142,10 +147,19 @@ body{
     color: #FFFFFF;
     background-color: #756157;
     text-decoration: none;
+    border-radius: 4px;
+    padding: 8px 50px;
+
 }
+
+
 
 .button-second {
     background-color: #82B3D3;
+}
+
+.button-select {
+    background-color: #7DB54F;
 }
 
 /* Специальные классы */
@@ -173,7 +187,7 @@ body{
     color: #FFFFFF;
 }
 
-/* Проверить, добавил не глядя */
+/* Украл не глядя. Проверить!!! */
 .visually-hidden {
     position: absolute;
     width: 1px;
