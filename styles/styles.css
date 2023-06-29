@@ -39,6 +39,7 @@ body{
     color: #000000;
     text-decoration: none;
 }
+
 /* Нужно добавить цвет текста и фона */
 .hero{
     color: #FFFFFF;
@@ -54,139 +55,6 @@ body{
     background-repeat: no-repeat;
 }
 
-/* Непонятное */
-.advantages{
-    text-align: center;
-}
-
-.recommendations{
-    text-align: center;
-}
-
-.search{
-    text-align: center;
-}
-
-.subscription{
-    text-align: center;
-}
-
-.subscription-main{
-    color: #FFFFFF;
-    background-color: #82B3D3;
-    background-image: url(../img/subscribe.jpg);
-    background-repeat: no-repeat;
-}
-/* Заголовки и тексты*/
-.title {
-    font-weight: 700;
-    color:#000000;
-    text-transform: uppercase;
-}
-
-.title-60{
-    font-size: 60px;
-    line-height: 78px;
-}
-
-.title-30{
-    font-size: 30px;
-    line-height: 36px;
-}
-
-.title-24{
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.title-24-None-Case {
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: none;
-}
-
-.text-22{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    color: #333333;
-}
-
-.text-phone {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    text-transform: uppercase;
-    color: #000000;
-    text-decoration: none;
-}
-
-.button-big{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #756157;
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 8px 50px;
-
-
-}
-
-.button{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #756157;
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 8px 50px;
-
-}
-
-
-
-.button-second {
-    background-color: #82B3D3;
-}
-
-.button-select {
-    background-color: #7DB54F;
-}
-
-/* Специальные классы */
-.background-basic{
-    background-color: #82B3D3;
-}
-
-.background-second-1{
-    background-color: rgba(131, 179, 211, 0.12);
-}
-
-.background-second-2{
-    background-color: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-title-light {
-    color: #FFFFFF;
-}
-
-.advantages-text-light{
-    color: #FFFFFF;
-}
-
-.text-light{
-    color: #FFFFFF;
-}
-
 /* Украл не глядя. Проверить!!! */
 .visually-hidden {
     position: absolute;
@@ -200,3 +68,87 @@ body{
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+/* !!!НОВЫЕ СТИЛИ!!! */
+
+/* Кнопки и ссылки */
+/* Цвета кнопок */
+.button-primary {
+    color: #FFFFFF;
+    background-color: #756157;
+}
+
+.button-secondary {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.button-select {
+    color: #FFFFFF;
+    background-color: #7DB54F;
+}
+/* Текст кнопок */
+.button-small {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-big {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+/* Заголовки и тексты */
+/* Заголовки */
+.title-1 {
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.title-2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.title-3 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.title-3-noncase {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.title-4 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+/* Тексты */
+.text-basic {
+
+}
