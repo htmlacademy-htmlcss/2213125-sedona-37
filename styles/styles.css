@@ -14,8 +14,13 @@
     font-display: swap;
 }
 
-body{
+html {
+    height: 100%;
+}
+
+body {
     margin: 0;
+    height: 100%;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -24,20 +29,101 @@ body{
     background-color: #F2F2F2;
 }
 
-.page-container{
+.page-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100%;
     width: 1200px;
-    margin: auto;
     background-color: #FFFFFF;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
 }
 
-/* Нужно добавить цвет текста и фона */
-.hero{
+/* header */
+.page-header {
+    display: flex;
+    padding: 0 70px;
+}
+
+.main-logo {
+    display: block;
+    width: 140px;
+}
+
+.navigation-list {
+    width: 339px;
+    margin: 0;
+    margin-left: 70px;
+    padding: 0;
+    list-style: none;
+}
+
+
+.navigation-user {
+    width: 268px;
+    margin-left: auto;
+    list-style: none;
+}
+
+/* main */
+.main-container {
+    flex-grow: 1;
+}
+
+.hero {
+
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
+    padding-left: 371px;
+    padding-right: 371px;
 }
+
+.main-hero {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Преимущества */
+
+.advantages-header-title {
+    width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.advantages-header-text {
+    width: 651px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.advantage-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.advantages-img {
+    display: block;
+}
+
+
+
+/* Нужно добавить цвет текста и фона */
+
 
 .header-filter {
     color: #FFFFFF;
@@ -46,8 +132,8 @@ body{
     background-repeat: no-repeat;
 }
 
-/* Украл не глядя. Проверить!!! */
-.visually-hidden {
+/* Проверить!!! */
+.visua1ly-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -79,7 +165,7 @@ body{
     background-color: #7DB54F;
 }
 
-.rating
+.rating {}
 /* Текст кнопок */
 .button-small {
     font-size: 16px;
@@ -106,7 +192,6 @@ body{
     line-height: 78px;
     font-weight: 700;
     color: #000000;
-    text-transform: uppercase;
 }
 
 .title-2 {
