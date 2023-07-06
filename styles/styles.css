@@ -43,6 +43,7 @@ body {
 .page-header {
     display: flex;
     padding: 0 70px;
+
 }
 
 .main-logo {
@@ -78,6 +79,8 @@ body {
     background-repeat: no-repeat;
     padding-left: 371px;
     padding-right: 371px;
+
+
 }
 
 .main-hero {
@@ -105,6 +108,40 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    list-style-type: none;
+}
+
+.advantages-item-container {
+    width: 230px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 90px 85px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.advantages-img-container {
+    width: 800px;
+    height: 385px;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-img {
+    display: block;
+}
+
+
+
+
+
+.advantage-item-wide {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #82B3D3;;
 }
 
 .advantage-container {
@@ -114,13 +151,6 @@ body {
     padding: 0;
     text-align: center;
 }
-
-
-.advantages-img {
-    display: block;
-}
-
-
 
 /* Нужно добавить цвет текста и фона */
 
@@ -133,7 +163,7 @@ body {
 }
 
 /* Проверить!!! */
-.visua1ly-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
