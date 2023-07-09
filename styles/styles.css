@@ -14,6 +14,12 @@
     font-display: swap;
 }
 
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -29,6 +35,20 @@ body {
     background-color: #F2F2F2;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+    /* white-space: nowrap; */
+    /* clip-path: inset(100%); */
+
+
 .page-container {
     display: flex;
     flex-direction: column;
@@ -43,27 +63,59 @@ body {
 .page-header {
     display: flex;
     padding: 0 70px;
-
 }
 
 .main-logo {
     display: block;
     width: 140px;
+    margin-right: 30px;
 }
 
 .navigation-list {
-    width: 339px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
     margin: 0;
-    margin-left: 70px;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
+
 }
 
+.navigation-link {
+    display: block;
+    padding: 20px 16px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
 
-.navigation-user {
-    width: 268px;
+.user-menu {
+    display: flex;
+    margin-left: auto;
+}
+
+.user-list {
+    width: 332px;
+    margin: 0;
+    padding: 0;
     margin-left: auto;
     list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.user-link {
+    display: block;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.user-button {
+    padding: 8px 34px;
+    border-radius: 4px;
 }
 
 /* main */
@@ -72,27 +124,38 @@ body {
 }
 
 .hero {
-
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 51px 0 82px 0;
     color: #FFFFFF;
     background-color: #82B3D3;
-    background-image: url(../img/hero.jpg);
+    background-image: url(../images/hero/hero-divider.svg), url(../images/hero/hero-background.jpg);
+    background-position:  bottom center;
     background-repeat: no-repeat;
-    padding-left: 371px;
-    padding-right: 371px;
-
-
 }
 
-.main-hero {
+.container-hero {
+    width: 458px;
+    height: 352px;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-img {
     display: block;
-    margin: 0 auto;
 }
 
 /* Преимущества */
+.advantages-top {
+    padding: 69px 0;
+    margin: 0;
+    margin-bottom: 21px;
+}
 
 .advantages-header-title {
     width: 620px;
-    margin: 0 auto;
+    margin: 0 auto 25px;
     text-align: center;
 }
 
@@ -112,7 +175,7 @@ body {
 }
 
 .advantages-item-container {
-    width: 230px;
+    width: 400px;
     min-height: 200px;
     display: flex;
     flex-direction: column;
@@ -133,10 +196,6 @@ body {
     display: block;
 }
 
-
-
-
-
 .advantage-item-wide {
     display: flex;
     flex-wrap: wrap;
@@ -152,35 +211,159 @@ body {
     text-align: center;
 }
 
-/* Нужно добавить цвет текста и фона */
+/* рекомендации */
+.recommendations-header {
+    padding: 64px 0;
+    margin: 0;
+    margin-bottom: 21px;
+}
 
+.recommendations-header-title {
+    width: 505px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
 
-.header-filter {
-    color: #FFFFFF;
+.recommendations-header-text {
+    width: 490px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recommendations-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+.recommendations-item {
+    width: 400px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 85px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* блок поиска */
+.search {
+    padding: 96px;
+}
+
+.search-title {
+    margin: 0 auto 20px;
+    width: 297px;
+}
+
+.search-description {
+    margin: 0 auto 54px;
+    width: 592px;
+    text-align: center;
+}
+
+.search-button {
+    display: block;
+    width: 376px;
+    margin: 0 auto;
+    padding: 8px 50px;
+    border-radius: 4px;
+
+}
+
+/* блок подписки */
+.subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 104px;
+}
+
+.subscription-title {
+    margin: 0 auto 20px;
+    width: 404px;
+}
+
+.subscription-description {
+    padding: 0;
+    margin: 0 auto 54px;
+    width: 475px;
+    text-align: center;
+}
+
+.subscription-form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.subscription-main {
     background-color: #82B3D3;
-    background-image: url(../img/filter.jpg);
+    background-image: url(../images/subscribe.jpg);
+    background-position:  bottom center;
     background-repeat: no-repeat;
 }
 
-/* Проверить!!! */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+/* подвал */
+.page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+    padding: 40px 70px 30px;
+}
+
+.footer-social {
+    width: 142px;
+    display: flex;
+}
+.footer-social-item {
+    display: block;
+}
+
+.footer-phone {
+    width: 720px;
+    text-align: center;
+}
+
+.footer-logo-academy {
+    width: 115px;
+}
+
+
+/* каталог */
+
+
+
+
+.container-inner {
+    padding: 35px 70px 70px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    background-image: url(../images/filter.jpg);
+    background-repeat: no-repeat;
+}
+
+.inner-header-title {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.breadcrumbs {
+
+}
 
 /* !!!НОВЫЕ СТИЛИ!!! */
 
 /* Кнопки и ссылки */
 /* Цвета кнопок */
 .button-primary {
+    display: block;
     color: #FFFFFF;
     background-color: #756157;
 }
@@ -257,14 +440,7 @@ body {
 }
 
 /* Тексты */
-.navigation-link {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
-    text-align: center;
-    color: #000000;
-    text-decoration: none;
-}
+
 
 .text-basic {
     font-size: 22px;
