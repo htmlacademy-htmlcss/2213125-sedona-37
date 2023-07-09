@@ -67,8 +67,13 @@ body {
 
 .main-logo {
     display: block;
+    position: relative;
     width: 140px;
     margin-right: 30px;
+}
+
+.logo {
+    display: block;
 }
 
 .navigation-list {
@@ -298,6 +303,7 @@ body {
 .subscription-form {
     margin: 0;
     padding: 0;
+    height: 52px;
     display: flex;
     justify-content: center;
 }
@@ -305,7 +311,7 @@ body {
 .subscription-main {
     background-color: #82B3D3;
     background-image: url(../images/subscribe.jpg);
-    background-position:  bottom center;
+    background-position:  center;
     background-repeat: no-repeat;
 }
 
@@ -357,6 +363,8 @@ body {
 .breadcrumbs {
 
 }
+
+.filter {}
 
 /* !!!НОВЫЕ СТИЛИ!!! */
 
