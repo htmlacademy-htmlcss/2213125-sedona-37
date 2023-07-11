@@ -344,6 +344,36 @@ body {
 
 /* каталог */
 
+.housing-list {
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
+    grid-template-columns: repeat(3, 340px);
+}
+
+.housing-card {
+    padding: 19px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    gap: 16px, 20px;
+}
+
+.housing-card-link {
+    width: 300px;
+    object-fit: contain;
+    grid-column: 1/-1;
+}
+
+.title-card {
+    margin: 0;
+    object-fit: contain;
+    grid-column: 1/-1;
+}
 
 
 
@@ -371,12 +401,13 @@ body {
 /* Кнопки и ссылки */
 /* Цвета кнопок */
 .button-primary {
-    display: block;
+    display: inline-block;
     color: #FFFFFF;
     background-color: #756157;
 }
 
 .button-secondary {
+    display: inline-block;
     color: #FFFFFF;
     background-color: #82B3D3;
 }
