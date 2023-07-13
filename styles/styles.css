@@ -63,10 +63,8 @@ body {
 .page-header {
     position: relative;
     z-index: 2;
-
     display: flex;
     padding: 0 70px;
-
 }
 
 .main-logo {
@@ -107,23 +105,27 @@ body {
 }
 
 .user-list {
-    width: 332px;
+    width: 312px;
     margin: 0;
     padding: 0;
     margin-left: auto;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
     align-items: center;
 }
 
 .user-link {
-    display: block;
-    min-width: 20px;
-    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    width: 44px;
+    background-color: pink;
 }
 
 .user-button {
+    width: 160px;
+    margin-left: 20px;
     padding: 8px 34px;
     border-radius: 4px;
 }
@@ -326,19 +328,26 @@ body {
     align-items: center;
     justify-content: space-between;
     margin:0;
-    padding: 40px 70px 30px;
+    padding: 45px 70px 35px;
 }
 
-.footer-social {
+.footer-social-list {
+    margin: 0;
+    padding: 0;
     width: 142px;
     display: flex;
 }
 .footer-social-item {
+    background-color: pink;
+    width: 47px;
     display: block;
 }
 
+
+
 .footer-phone {
-    width: 720px;
+    display: block;
+    width: 331px;
     text-align: center;
 }
 
@@ -609,6 +618,7 @@ body {
 }
 
 .text-phone {
+    display: block;
     font-size: 40px;
     line-height: 40px;
     color: #000000;
@@ -644,4 +654,46 @@ body {
 
 .text-light{
     color: #FFFFFF;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.80);
+    z-index: 3
+}
+
+.modal-container-close {
+    display: none;
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 64px 70px;
+    background-color: #FFFFFF;
+
+}
+
+.modal-search {
+    width: 717px;
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    background-color: #F2F2F2;
+    border: none;
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
 }
