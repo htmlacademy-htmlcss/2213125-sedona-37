@@ -466,6 +466,10 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .pagination-item:not(:last-child) {
@@ -480,9 +484,22 @@ body {
     height: 60px;
     text-decoration: none;
     border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
 }
 
+.pagination-current {
+    color: #000000;
+    background-color: #F2F2F2
+}
 
+.pagination-all {
+    color: #000000;
+    background-color: inherit;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
 
 
 /* !!!НОВЫЕ СТИЛИ!!! */
@@ -627,30 +644,4 @@ body {
 
 .text-light{
     color: #FFFFFF;
-}
-
-/* Пагинация */
-.pagination {
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.pagination-link {
-    color: #FFFFFF;
-    background-color: #82B3D3;
-}
-
-.pagination-current {
-    color: #000000;
-    background-color: #F2F2F2
-}
-
-.pagination-all {
-    color: #000000;
-    background-color: #ffffff;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
 }
