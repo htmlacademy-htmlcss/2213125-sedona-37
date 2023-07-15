@@ -188,14 +188,16 @@ body {
 
 .advantages-item-container {
     width: 400px;
-    min-height: 200px;
+    min-height: 385px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 103px 85px;
 }
 
 .advantages-title {
+    width: 175px;
     margin: 0;
     margin-bottom: 60px;
 }
@@ -508,6 +510,10 @@ body {
     grid-column: 1/-1;
 }
 
+.housing-card-image {
+    display: block;
+}
+
 .title-card {
     margin: 0;
     object-fit: contain;
@@ -528,6 +534,11 @@ body {
     border-radius: 4px;
 }
 
+.housing-card-price {
+    display: flex;
+    justify-content: end;
+}
+
 .button-favorites {
     padding: 8px 20px;
     border: none;
@@ -538,6 +549,16 @@ body {
     padding: 8px 18px;
     border: none;
     border-radius: 4px;
+}
+
+.housing-stars {
+    width: 140px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.housing-stars-image {
+    display: block;
 }
 
 .housing-card-rating {
