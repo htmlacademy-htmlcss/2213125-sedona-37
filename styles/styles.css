@@ -622,6 +622,7 @@ body {
 .button-primary {
     font-family: inherit;
     display: inline-block;
+    cursor: pointer;
     color: #FFFFFF;
     background-color: #756157;
 }
@@ -629,6 +630,7 @@ body {
 .button-secondary {
     font-family: inherit;
     display: inline-block;
+    cursor: pointer;
     color: #FFFFFF;
     background-color: #82B3D3;
 }
@@ -636,6 +638,7 @@ body {
 .button-select {
     font-family: inherit;
     display: inline-block;
+    cursor: pointer;
     color: #FFFFFF;
     background-color: #7DB54F;
 }
