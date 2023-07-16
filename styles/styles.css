@@ -556,6 +556,8 @@ body {
 }
 
 .breadcrumbs {
+    font-size: 16px;
+    font-weight: 21px;
     display: flex;
     margin: 0;
     padding: 0;
@@ -601,13 +603,105 @@ body {
     fill: rgba(255, 255, 255, 0.30);
 }
 
-.filter-hotels {
-    display: flex;
+/* фильтр */
+
+.filter-hotels-title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 32px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
 }
 
-/* слайдер */
+.control {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+
+.filter-hotels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-hotels-left {
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+}
+
+.filter-hotels-right {
+    display: flex;
+    justify-content: space-between;
+    width: 549px;
+}
+
+.filter-hotels-group {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.filter-hotels-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* слайдер в фильтре */
+
+
+
+
+.filter-hotel-range {
+    width: 288px;
+}
+
+.range-wrapper-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+.range-input {
+    width: 143px;
+    margin: 0;
+    padding: 12px 20px;
+    font: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: #F2F2F2;
+    border-style: none;
+}
+
+.range-input:hover {
+    background-color: #E6E6E6;
+}
+
+.range-input:focus {
+    outline: solid 3px #83B3D3;
+    background-color: #E6E6E6;
+}
+
+.range-input-min {
+    border-radius: 4px 0 0 4px;
+}
+
+.range-input-max {
+    border-radius: 0 4px 4px 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
 .range-scale {
     position: relative;
+    margin-bottom: 8px;
     width: 287px;
     height: 4px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -628,8 +722,30 @@ body {
     border-radius: 5px;
     border-style: none;
     cursor: pointer;
-
 }
+
+.range-toggle:focus {
+    outline: solid 3px #83B3D3;
+}
+
+.range-toggle:active {
+    outline: solid 2px #83B3D3;
+}
+
+.toggle-min {
+    top: -8px;
+    left: 0;
+}
+
+.toggle-max {
+    top: -8px;
+    right: 0;
+}
+
+
+
+
+/* кнопки в фильтрах */
 
 .filter-buttons {
     display: flex;

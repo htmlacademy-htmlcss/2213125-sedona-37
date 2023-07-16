@@ -77,9 +77,10 @@
             </ul>
           </header>
 
-          <div class="filter-hotels">
+          <div class="filter-hotels-container">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="filter-hotels" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="filter-hotels-left">
               <fieldset class="filter-hotels-group">
                 <legend class="filter-hotels-title">Инфраструктура:</legend>
                 <ul class="filter-hotels-list">
@@ -126,19 +127,20 @@
                   </li>
                 </ul>
               </fieldset>
-
-              <fieldset class="filter-hotels-group">
+              </div>
+              <div class="filter-hotels-right">
+              <fieldset class="filter-hotels-group filter-hotel-range">
                 <legend class="filter-hotels-title">Стоимость, ₽:</legend>
                 <div class="range-wrapper-inputs">
                   <label class="filter-hotels-label">
-                    от <input class="range-input" type="number" value="0" name="min-price">
+                    <input class="range-input range-input-min" type="number" value="0" name="min-price">
                   </label>
                   <label class="filter-hotels-label">
-                    от <input class="range-input" type="number" value="9000" name="max-price">
+                    <input class="range-input range-input-max" type="number" value="9000" name="max-price">
                   </label>
                 </div>
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 136px">
+                  <div class="range-bar" style="left: 0; width: 226px">
                     <button type="button" class="range-toggle toggle-min">
                       <span class="visually-hidden">
                         Изменить минимальную цену.
@@ -155,6 +157,7 @@
               <div class="filter-buttons">
                 <button class="button-secondary button-small filter-button-submit" type="submit">Применить</button>
                 <button class="button-small filter-button-reset" type="button">Сбросить</button>
+              </div>
               </div>
             </form>
           </div>
