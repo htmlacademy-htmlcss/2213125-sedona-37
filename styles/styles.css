@@ -117,10 +117,32 @@ body {
 }
 
 .user-link {
-    display: flex;
-    justify-content: center;
+    display: block;
+    position: relative;
+    padding: 22px 12px;
     width: 44px;
-    background-color: pink;
+    height: 64px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill:#000000;
+}
+
+
+.favorites-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill:#000000;
 }
 
 .user-button {
@@ -197,9 +219,33 @@ body {
 }
 
 .advantages-title {
+    position: relative;
     width: 175px;
     margin: 0;
     margin-bottom: 60px;
+}
+
+.advantages-item-primary .advantages-title::before {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    margin-left: -30px;
+    background-color: rgba(255, 255, 255, 0.30);
+    content: "";
+}
+
+.advantages-item-secondary .advantages-title::before,
+.advantages-item-tertiary .advantages-title::before {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    margin-left: -30px;
+    background-color: rgba(0, 0, 0, 0.30);
+    content: "";
 }
 
 .advantages-text {
@@ -217,11 +263,19 @@ body {
     display: block;
 }
 
-.advantage-item-wide {
+.advantages-item-primary {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     background-color: #82B3D3;;
+}
+
+.advantages-item-secondary {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-tertiary {
+    background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantage-container {
@@ -261,10 +315,10 @@ body {
 
 .recommendations-item {
     width: 400px;
-    min-height: 200px;
+    min-height: 385px;
     display: flex;
     flex-direction: column;
-    padding: 80px 85px;
+    padding: 183px 85px 80px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -276,6 +330,29 @@ body {
 
 .recommendations-description {
     margin: 0;
+}
+
+.recommendations-item-housing {
+    background-color: rgba(131, 179, 211, 0.12);
+    background-image: url(../images/housing.svg);
+    background-repeat: no-repeat;
+    background-size: 77px 72px;
+    background-position: top 80px center;
+}
+
+.recommendations-item-food {
+    background-image: url(../images/food.svg);
+    background-repeat: no-repeat;
+    background-size: 76px 72px;
+    background-position: top 80px center;
+}
+
+.recommendations-item-souvenirs {
+    background-color: rgba(131, 179, 211, 0.12);
+    background-image: url(../images/souvenirs.svg);
+    background-repeat: no-repeat;
+    background-size: 76px 76px;
+    background-position: top 80px center;
 }
 
 /* блок поиска */
@@ -358,21 +435,42 @@ body {
 
 .footer-social-list {
     display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     width: 142px;
     list-style-type: none;
 
 }
-.footer-social-item {
-    background-color: pink;
+
+.footer-social-link {
+    display: block;
+    position: relative;
+    height: 40px;
     width: 47px;
 }
+
+.social-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill:#83B3D3
+}
+
+
 
 .footer-phone {
     display: block;
     width: 331px;
     text-align: center;
+}
+
+.footer-logo-link {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-logo-academy {
@@ -404,6 +502,13 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.breadcrumbs .breadcrumbs-item:not(:last-child) {
+    background-image: url(../images/breadcrumbs-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 8px 11px;
+    background-position: center right 10px;
 }
 
 .breadcrumbs-link {
@@ -469,18 +574,41 @@ body {
     display: flex;
     justify-content: space-between;
     width: 160px;
-
     list-style-type: none;
 }
 
-.view-button-link {
+.view-button {
     display:block;
     width: 48px;
     height: 48px;
-
     border-radius: 4px;
     border: 2px solid;
     border-color: #E5E5E5;
+}
+
+.view-button-current {
+    border-color: #000000;
+}
+
+.view-button-cards {
+    background-image: url(../images/view/view-cards.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 14px;
+    background-position: center;
+}
+
+.view-button-more {
+    background-image: url(../images/view/view-more.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 14px;
+    background-position: center;
+}
+
+.view-button-list {
+    background-image: url(../images/view/view-list.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 14px;
+    background-position: center;
 }
 
 /* карточки отелей */
@@ -627,6 +755,25 @@ body {
     background-color: #756157;
 }
 
+.button-primary:hover {
+    background-color: #615048;
+}
+
+.button-primary:focus {
+    background-color: #615048;
+}
+
+.button-primary:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #756157;
+}
+.button-primary:disabled,
+.button-primary:disabled:hover {
+    background-color: #e5e5e5;
+    outline: none;
+    cursor: default;
+}
+
 .button-secondary {
     font-family: inherit;
     display: inline-block;
@@ -635,12 +782,50 @@ body {
     background-color: #82B3D3;
 }
 
+.button-secondary:hover {
+    background-color: #68A2CA;
+}
+
+.button-secondary:focus {
+    background-color: #68A2CA;
+}
+
+.button-secondary:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #82B3D3;
+}
+.button-secondary:disabled,
+.button-secondary:disabled:hover {
+    background-color: #e5e5e5;
+    outline: none;
+    cursor: default;
+}
+
 .button-select {
     font-family: inherit;
     display: inline-block;
     cursor: pointer;
     color: #FFFFFF;
     background-color: #7DB54F;
+}
+
+.button-select:hover {
+    background-color: #6C9E42;
+}
+
+.button-select:focus {
+    background-color: #6C9E42;
+}
+
+.button-select:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #7DB54F;
+}
+.button-select:disabled,
+.button-select:disabled:hover {
+    background-color: #e5e5e5;
+    outline: none;
+    cursor: default;
 }
 
 /* Текст кнопок */
@@ -738,30 +923,6 @@ body {
 }
 
 /* Модификаторы цвета фона и текста */
-
-.background-basic{
-    background-color: #82B3D3;
-}
-
-.background-second-1{
-    background-color: rgba(131, 179, 211, 0.12);
-}
-
-.background-second-2{
-    background-color: rgba(131, 179, 211, 0.2);
-}
-
-.forms-input {
-    background-color: #3F5E72;
-}
-
-.forms-elements-1 {
-    background-color: #E5E5E5
-}
-
-/* .forms-elements-2 {
-    background-color: #F2F2F2
-} */
 
 .text-light{
     color: #FFFFFF;
