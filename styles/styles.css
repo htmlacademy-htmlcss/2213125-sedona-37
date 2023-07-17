@@ -138,6 +138,21 @@ body {
     height: 64px;
 }
 
+.user-link:hover .search-icon,
+.user-link:hover .favorites-icon {
+    fill: #68A2CA;
+}
+
+.user-link:focus .search-icon,
+.user-link:focus .favorites-icon {
+    fill: #68A2CA;
+}
+
+.user-link:active .search-icon,
+.user-link:active .favorites-icon {
+    fill: #756157;
+}
+
 .search-icon {
     position: absolute;
     top: 0;
@@ -157,6 +172,22 @@ body {
     left: 0;
     margin: auto;
     fill:#000000;
+}
+
+.favorites-counter {
+    position: absolute;
+    bottom: 33px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 10px;
+    color: #ffffff;
+    background-color: #7db54f;
+    border-radius: 50%;
 }
 
 .user-button {
@@ -605,6 +636,12 @@ body {
 
 /* фильтр */
 
+.filter-hotels-group {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 .filter-hotels-title {
     margin: 0;
     padding: 0;
@@ -614,7 +651,73 @@ body {
     font-weight: 700;
 }
 
+.filter-hotels-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.filter-hotels-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
 .control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+}
+
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+/* radio стиль */
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+  }
+
+.control:hover .control-mark,
+.control:hover .control-label {
+    opacity: 0.6;
+}
+
+.control-input:focus + .control-mark {
+    outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark,
+.control:active .control-label {
+    opacity: 0.3;
+}
+
+.control-input:disabled + .control-mark {
+    opacity: 30%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+    background-image: url(../images/check_mark.svg);
+    background-repeat: no-repeat;
+    background-position: top 6px left 4px;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(63, 94, 114, 1);
+    content: "";
+}
+
+.control-label {
     font-size: 18px;
     line-height: 23px;
 }
@@ -637,17 +740,9 @@ body {
     width: 549px;
 }
 
-.filter-hotels-group {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
 
-.filter-hotels-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
+
+
 
 /* слайдер в фильтре */
 
@@ -664,10 +759,14 @@ body {
     margin-bottom: 44px;
 }
 
+.filter-hotels-label {
+    position: relative;
+}
+
 .range-input {
     width: 143px;
     margin: 0;
-    padding: 12px 20px;
+    padding: 12px 50px 12px 20px;
     font: inherit;
     font-size: 18px;
     line-height: 24px;
@@ -697,6 +796,14 @@ body {
 .range-input::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
+}
+
+.filter-hotels-label span {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .range-scale {
@@ -807,12 +914,22 @@ body {
 }
 
 .select-control {
+    position: relative;
+    display: flex;
     margin-left: auto;
     margin-right: 70px;
+    padding: 12px 52px 12px 20px;
     width: 292px;
+    font: inherit;
+    font-weight: 400;
+    line-height: 21px;
     border-radius: 4px;
     border: 2px solid;
     border-color: #E5E5E5;
+    background-image: url("../images/select_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    appearance: none;
 }
 
 .select-control:hover {
