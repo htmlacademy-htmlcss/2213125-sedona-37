@@ -219,7 +219,7 @@ body {
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url(../images/hero/hero-divider.svg), url(../images/hero/hero-background.jpg);
-    background-size: cover;
+    background-size: cover contain;
     background-position: bottom center;
     background-repeat: no-repeat;
 }
