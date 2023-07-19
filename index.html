@@ -218,12 +218,13 @@
         </section>
       </footer>
       <!-- модальное окно -->
-      <div class="modal-container modal-container-close1">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-search">
           <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17 4.29231L15.7077 3L10 8.70769L4.29231 3L3 4.29231L8.70769 10L3 15.7077L4.29231 17L10 11.2923L15.7077 17L17 15.7077L11.2923 10L17 4.29231Z" />
+              <path
+                d="M17 4.29231L15.7077 3L10 8.70769L4.29231 3L3 4.29231L8.70769 10L3 15.7077L4.29231 17L10 11.2923L15.7077 17L17 15.7077L11.2923 10L17 4.29231Z" />
             </svg>
           </button>
           <div class="modal-heading">
@@ -235,7 +236,7 @@
               <label class="modal-control">
                 Дата Заезда:
               </label>
-              <input class="modal-date" type="text" name="trip-start" value="27 июля 2020" placeholder="Укажите дату"
+              <input class="modal-date" type="text" name="trip-start" value="27 апреля 2020" placeholder="Укажите дату"
                 required>
               <span class="modal-validality modal-validality-error">Мы не можем отправить вас в прошлое.</span>
             </p>
@@ -244,14 +245,15 @@
               <label class="modal-control">
                 Дата Выезда:
               </label>
-              <input class="modal-date" type="text" name="trip-end" value="27 июля 2020" placeholder="Укажите дату"
+              <input class="modal-date" type="text" name="trip-end" value="1 сентября 2023" placeholder="Укажите дату"
                 required>
-              <span class="modal-validality modal-validality-valid">На эти даты есть свободные номер. Пока есть.</span>
+              <span class="modal-validality modal-validality-valid">На эти даты есть свободные номера. Пока есть.</span>
             </p>
 
             <div class="number-container">
-              <p class="modal-number-group">
-                <label class="modal-control modal-control-number">
+
+              <div class="modal-number-group">
+                <label class="modal-control modal-control-number modal-control-adult">
                   Взрослые:
                 </label>
                 <!-- Кнопки на скрипте -->
@@ -270,25 +272,26 @@
                     <path fill="currenColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
                 </button>
-              </p>
-              <p class="modal-number-group">
-                <label class="modal-control modal-control-number">
-                  Дети:
-                </label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" aria-labelledby="tooltip-label-address" type="button">
-                    <svg class="form-label-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
-                        fill="white" />
-                    </svg>
-                  </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-address">
-                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-                    размещаются бесплатно.
+              </div>
+
+              <div class="modal-number-group">
+                  <label class="modal-control modal-control-number modal-control-children">
+                    Дети:
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" aria-labelledby="tooltip-label-address" type="button">
+                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.
+                    </span>
                   </span>
-                </span>
                 <!-- Кнопки на скрипте -->
                 <button class="modal-number-minus" type="button">
                   <span class="visually-hidden">Уменьшить</span>
@@ -305,7 +308,7 @@
                     <path fill="currenColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
                 </button>
-              </p>
+              </div>
             </div>
             <button class="button-secondary button-modal" type="submit">Найти</button>
           </form>
@@ -313,5 +316,4 @@
       </div>
     </div>
   </body>
-
 </html>

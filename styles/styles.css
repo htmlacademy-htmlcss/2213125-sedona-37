@@ -732,7 +732,7 @@ body {
 .filter-hotels-left {
     display: flex;
     justify-content: space-between;
-    width: 370px;
+    width: 361px;
 }
 
 .filter-hotels-right {
@@ -1423,12 +1423,16 @@ body {
     height: 52px;
     background-color: #F2F2F2;
     border-radius: 50%;
+
     border: none;
     cursor: pointer;
 }
 
 .modal-close-button svg {
+    position: absolute;
     fill:#000000;
+    top: 16px;
+    left: 16px;
 }
 
 .modal-close-button:hover {
@@ -1447,7 +1451,7 @@ body {
 }
 
 .modal-heading {
-    margin-bottom: 64px;
+    margin-bottom: 65px;
     width: 413px;
 }
 
@@ -1464,24 +1468,27 @@ body {
 .modal-form {
     display: flex;
     flex-direction: column;
-    gap: 23px;
-
 }
 
 .modal-field-group {
     display: grid;
     margin: 0;
+    margin-bottom: 23px;
     grid-template-columns: 120px 440px;
-    gap: 4px 18px;
+    gap: 4px 17px;
     align-items: center;
 }
 
 .modal-control {
     font-weight: 700;
     font-size: 20px;
+    line-height: 24px;
     /* padding-top: 12px; */
     /* padding-bottom: 12px; */
 }
+
+
+
 
 .modal-date {
     padding: 12px 50px 12px 20px;
@@ -1491,7 +1498,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     background: #F2F2F2;
-    border-radius: 2px;
+    border-radius: 4px;
     background-image: url("../images/date_icon.svg");
     background-repeat: no-repeat;
     background-position: right 20px top 16px;
@@ -1516,20 +1523,24 @@ body {
 
 .number-container {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    margin-bottom : 48px;
 }
 
 .modal-number-group {
     margin: 0;
-    margin-bottom: 48px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .modal-control-number {
     display: flex;
-    margin-right: 46px;
     align-items: center;
+}
+
+.modal-number-adults {
+    width: 250px;
 }
 
 .modal-number {
@@ -1537,6 +1548,7 @@ body {
     border: none;
     background: #F2F2F2;
     width: 31px;
+    height: 48px;
     padding: 14px 0;
     text-align: center;
     margin: 0;
@@ -1546,6 +1558,13 @@ body {
     line-height: 20px
 }
 
+.modal-control-adult {
+    margin-right: 46px;
+}
+
+.modal-control-children {
+    margin-right: 10px;
+}
 
 .modal-number::-webkit-inner-spin-button,
 .modal-number::-webkit-outer-spin-button {
@@ -1595,14 +1614,16 @@ body {
 
 /* Тултип */
 
+/* Тултип */
+
 .tooltip {
-    /* position: absolute; */
-    margin-left: 52px;
+    position: relative;
+    margin-right: 46px;
 }
 
 .tooltip-toggle {
-    margin-top: 4px;
-    margin-left: 4px;
+    /* margin-top: 4px; */
+    /* margin-left: 4px; */
     padding: 0;
     border: none;
     background-color: transparent;
@@ -1620,29 +1641,30 @@ body {
 
 .tooltip-text {
     position: absolute;
-    right: -120px;
-    top: 51px;
+    transform: translateX(-50%);
+    left: calc(50%);
+    top: 43px;
     background: #535353;
     color: #fff;
     font-size: 16px;
     line-height: 20px;
-    font-weight: normal;
+    font-weight: 400;
     text-transform: none;
     border: none;
-    padding: 15px 18px 18px 22px;
+    padding: 20px 18px 23px 22px;
     border-radius: 10px;
     width: 256px;
     box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
     z-index: 1;
-    display: none;
+    /* display: none; */
 }
 
 .tooltip-text::after {
     content: '';
-    width: 20px;
-    height: 20px;
-    top: -9px;
-    left: 115px;
+    width: 13px;
+    height: 13px;
+    top: -6px;
+    left: calc(50% - 7px);
     position: absolute;
     background-color: #535353;
     transform: rotate(45deg);
