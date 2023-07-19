@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head data-test="header">
+  <head>
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -11,7 +11,7 @@
   <body>
     <div class="page-container">
       <!-- шапка -->
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="main-logo" href="index.html">
           <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
         </a>
@@ -63,17 +63,17 @@
         </div>
       </header>
       <!-- содержимое страницы -->
-      <main class="main-index main-container">
+      <main class="main-index main-container" data-test="main">
         <h1 class="visually-hidden">Седона</h1>
         <!-- блок hero -->
-        <section class="hero">
+        <section class="hero" data-test="hero">
           <h2 class="visually-hidden">Добро пожаловать в великолепную Седону</h2>
           <figure class="container-hero">
             <img class="hero-img" src="images/hero-welcome.svg" width="458" height="352" alt="Приветственный логотип">
           </figure>
         </section>
         <!-- блок преимуществ -->
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <div class="advantages-top">
             <h2 class="title-2 advantages-header-title">Седона — небольшой городок в Аризоне, заслуживающий большего!
             </h2>
@@ -120,7 +120,7 @@
           </ul>
         </section>
         <!-- блок рекомендации -->
-        <section class="recommendations">
+        <section class="recommendations" data-test="service">
           <div class="recommendations-header">
             <h2 class="title-2 recommendations-header-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="text-basic recommendations-header-text">Опытный персонал и качественное обслуживание!</p>
@@ -146,14 +146,14 @@
         </section>
 
         <!-- блок поиска -->
-        <section class="search">
+        <section class="search" data-test="search">
           <h2 class="title-2 search-title">Заинтересовались?</h2>
           <p class="text-basic search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
             предложения гостиниц в Седоне</p>
           <a class="button-primary button-big search-button" href="">Поиск гостиницы в Седоне</a>
         </section>
         <!-- блок подписки -->
-        <section class="subscription subscription-main">
+        <section class="subscription subscription-main" data-test="subscribe">
           <h2 class="title-2 text-light subscription-title">Подпишитесь на рассылку</h2>
           <p class="text-basic text-light subscription-description">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
@@ -166,7 +166,7 @@
         </section>
       </main>
       <!-- подвал сайта -->
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
