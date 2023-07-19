@@ -104,6 +104,14 @@ body {
     text-decoration: none;
 }
 
+.navigation-link:hover {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.navigation-link:active {
+    background-color: rgba(131, 179, 211, 1);
+}
+
 .navigation-link-current::before {
     position: absolute;
     right: 16px;
@@ -211,6 +219,7 @@ body {
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url(../images/hero/hero-divider.svg), url(../images/hero/hero-background.jpg);
+    background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
 }
@@ -469,6 +478,7 @@ body {
     background-image: url(../images/subscribe.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* подвал */
@@ -578,6 +588,7 @@ body {
     background-color: #82B3D3;
     background-image: url(../images/filter.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .filter-header {
