@@ -231,24 +231,24 @@
           </button>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="modal-field-group">
-              <label class="modal-control">
+              <label class="modal-control" for="trip-start">
                 Дата Заезда:
               </label>
-              <input class="modal-date" type="text" name="trip-start" value="27 апреля 2020" placeholder="Укажите дату"
+              <input class="modal-date" id="trip-start" type="text" name="trip-start" value="27 апреля 2020" placeholder="Укажите дату"
                 required>
               <span class="modal-validality modal-validality-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="modal-field-group">
-              <label class="modal-control">
+              <label class="modal-control" for="trip-end">
                 Дата Выезда:
               </label>
-              <input class="modal-date" type="text" name="trip-end" value="1 сентября 2023" placeholder="Укажите дату"
+              <input class="modal-date" id="trip-end" type="text" name="trip-end" value="1 сентября 2023" placeholder="Укажите дату"
                 required>
               <span class="modal-validality modal-validality-valid">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="number-container">
               <div class="modal-number-group">
-                <label class="modal-control modal-control-number modal-control-adult">
+                <label class="modal-control modal-control-number modal-control-adult" for="trip-adults">
                   Взрослые:
                 </label>
                 <!-- Кнопки на скрипте -->
@@ -259,7 +259,7 @@
                     <path fill="currenColor" d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
-                <input class="modal-number" type="number" name="trip-adults" value="2">
+                <input class="modal-number" id="trip-adults" type="number" name="trip-adults" value="2">
                 <button class="modal-number-plus" type="button">
                   <span class="visually-hidden">Добавить</span>
                   <svg class="plus-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +269,7 @@
                 </button>
               </div>
               <div class="modal-number-group">
-                <label class="modal-control modal-control-number modal-control-children">
+                <label class="modal-control modal-control-number modal-control-children" for="trip-children">
                   Дети:
                 </label>
                 <span class="tooltip">
@@ -294,7 +294,7 @@
                     <path fill="currenColor" d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
-                <input class="modal-number" type="number" name="trip-adults" value="2">
+                <input class="modal-number" id="trip-children" type="number" name="trip-children" value="2">
                 <button class="modal-number-plus" type="button">
                   <span class="visually-hidden">Добавить</span>
                   <svg class="plus-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
