@@ -1739,6 +1739,24 @@ body {
     border-radius: 0 4px 4px 0;
 }
 
+.plus-icon {
+    fill: rgba(117, 97, 87, 0.3);
+}
+
+.minus-icon {
+    fill: rgba(117, 97, 87, 0.3);
+}
+
+.plus-icon:hover,
+.minus-icon:hover {
+    fill: rgba(117, 97, 87, 0.6);
+}
+
+.plus-icon:active,
+.minus-icon:active {
+    fill: rgba(117, 97, 87, 1);
+}
+
 .modal-number-minus {
     display: block;
     margin: 0;
@@ -1747,14 +1765,6 @@ body {
     border: none;
     background: #F2F2F2;
     border-radius: 4px 0 0 4px;
-}
-
-.minus-icon {
-    fill: #000000;
-}
-
-.plus-icon {
-    fill: #000000;
 }
 
 .button-modal {
