@@ -688,7 +688,8 @@ body {
 
 .breadcrumbs {
     font-size: 16px;
-    font-weight: 21px;
+    line-height: 21px;
+    font-weight: 400;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -903,6 +904,10 @@ body {
     -webkit-appearance: none;
     appearance: none;
     margin: 0;
+}
+
+.range-input[type='number'] {
+    -moz-appearance: textfield;
 }
 
 .filter-hotels-label span {
@@ -1582,7 +1587,7 @@ body {
 
 .modal-heading {
     margin-bottom: 65px;
-    width: 413px;
+    width: 415px;
 }
 
 .modal-title {
@@ -1718,6 +1723,10 @@ body {
 .modal-number::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.modal-number[type='number'] {
+    -moz-appearance: textfield;
 }
 
 .modal-number-plus {
